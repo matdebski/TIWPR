@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="lobby">
+        <input type="text" id="gameIdInput" placeholder="Enter Game ID" />
+        <button id="joinGameBtn">Join Game</button>
+        <button id="createGameBtn">Create Game</button>
+      </div>
+      <div id="game-header">
+        <table>
+          <tr>
+            <td>GameID:</td>
+            <td class="value" id="gameId">
+              ????????????????????????????????????
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="horizontal-container">
+        <div class="scoreboard" id="player-stats">
+          <table>
+            <tr>
+              <td class="player-title">Player:</td>
+            </tr>
+            <tr>
+              <td class="value" id="playerId">
+                ????????????????????????????????????
+              </td>
+            </tr>
+            <tr>
+              <td class="player-title">Points:</td>
+            </tr>
+            <tr>
+              <td class="value" id="playerPoints">0</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="canvas-container">
+          <canvas id="gameCanvas" width="615" height="615"></canvas>
+        </div>
+
+        <div class="scoreboard" id="opponent-stats">
+          <table>
+            <tr>
+              <td class="opponent-title">Opponent:</td>
+            </tr>
+            <tr>
+              <td class="value" id="opponentId">
+                ????????????????????????????????????
+              </td>
+            </tr>
+            <tr>
+              <td class="opponent-title">Points:</td>
+            </tr>
+            <tr>
+              <td class="value" id="opponentPoints">0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>
