@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ustawia wysokość na 100% okna przeglądarki */
+    margin: 0; /* Usuwa marginesy */
+    background-color: #f0f0f0; /* Opcjonalne: kolor tła */
+}
+
+.horizontal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+canvas {
+    border: 2px solid #000; /* Obrysowanie canvasa */
+    background-color: #fff; /* Kolor tła canvasa */
+}
+
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+
+.player-title{
+    background-color: #c6f6c6;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.opponent-title{
+    font-size: 30px;
+    background-color: #fa8072;
+    font-weight: bold;
+}
+
+.value{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#game-header{
+    display: flex;
+    justify-content: center;
+}
+
+.lobby{
+    display: flex;
+    justify-content: center;
+}
